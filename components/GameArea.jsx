@@ -22,13 +22,13 @@ export function GameArea() {
 				<span>🍪 Score: {score}</span>
 			</div>
 			<button
-				onClick={startGame}
-				disabled={gameActive}
 				className={`px-4 py-2 rounded text-white font-semibold transition ${
 					gameActive
 						? "bg-gray-400 cursor-not-allowed"
 						: "bg-gradient-to-b from-yellow-400 to-orange-500 shadow-md active:shadow-sm"
 				}`}
+				onClick={startGame}
+				disabled={gameActive}
 			>
 				{gameActive ? "Nom nom nom..." : "Start Game"}
 			</button>
