@@ -16,8 +16,8 @@ export function GameArea() {
 
 	return (
 		<div className="text-center p-4">
-			<h1 className="text-2xl font-bold mb-4">🍪 Whack‑A‑Cookie 🍪</h1>
-			<div className="flex justify-center gap-16 mb-2 text-lg">
+			<h1 className="text-2xl font-bold m-8">🍪 Whack‑A‑Cookie 🍪</h1>
+			<div className="flex justify-center gap-16 m-8 text-lg">
 				<span>⏱ {timeLeft}s</span>
 				<span>🍪 Score: {score}</span>
 			</div>
@@ -25,7 +25,7 @@ export function GameArea() {
 				className={`px-4 py-2 rounded text-white font-semibold transition ${
 					gameActive
 						? "bg-gray-400 cursor-not-allowed"
-						: "bg-gradient-to-b from-yellow-400 to-orange-500 shadow-md active:shadow-sm"
+						: "bg-gradient-to-b from-yellow-400 to-orange-500 shadow-md active:shadow-sm hover:bg-gradient-to-b hover:to-yellow-400 hover:from-orange-500"
 				}`}
 				onClick={startGame}
 				disabled={gameActive}
@@ -34,7 +34,7 @@ export function GameArea() {
 			</button>
 
 			<div
-				className="relative w-[500px] h-[500px] mx-auto mt-4 bg-gray-500 border-none border-gray-300 rounded overflow-hidden"
+				className="relative w-[500px] h-[500px] mx-auto mt-4 bg-transparent border-none border-gray-300 rounded overflow-hidden"
 				ref={gameAreaRef}
 			>
 				{gameActive && (
