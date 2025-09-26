@@ -1,1 +1,1 @@
---^-- Wellcome to Cookieverse --^--
+--^-- Welcomme to Cookieverse --^--
